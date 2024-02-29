@@ -1,5 +1,12 @@
 class Pizza:
-
+    """
+    Attributes:
+    name,
+    dough,
+    sauce,
+    toppings,
+    price
+    """
     def __init__(self, name, dough, sauce, toppings, price):
         """
         Args:
@@ -57,6 +64,10 @@ class Pizza:
         """
         return f"Забоксиваем {self.name}"
 class PepperoniPizza(Pizza):
+    """
+    Attributes:
+    None
+    """
     def __init__(self):
         """
         Args:
@@ -66,6 +77,10 @@ class PepperoniPizza(Pizza):
         """
         super().__init__("Пицца пепперони", "Tonkoe", "Tomatniy", "Пепперони", 3500)
 class BBQPizza(Pizza):
+    """
+    Attributes:
+    None
+    """
     def __init__(self):
         """
         Args:
@@ -75,6 +90,10 @@ class BBQPizza(Pizza):
         """
         super().__init__("Пицца BBQ", "Tonkoe", "barbeque", "Капуста", 6500)
 class SeafoodPizza(Pizza):
+    """
+    Attributes:
+    None
+    """
     def __init__(self):
         """
         Args:
@@ -85,6 +104,10 @@ class SeafoodPizza(Pizza):
         super().__init__("Пицца Морская", "Tonkoe", "Morskoi", "Voda", 5500)
 
 class Order:
+    """
+    Attributes:
+    None
+    """
     def __init__(self):
         """
         Args:
@@ -111,6 +134,10 @@ class Order:
         """
         return sum(pizza.price for pizza in self.pizzas)
 class Terminal:
+    """
+    Attributes:
+    None
+    """
     def __init__(self):
         """
         Args:
